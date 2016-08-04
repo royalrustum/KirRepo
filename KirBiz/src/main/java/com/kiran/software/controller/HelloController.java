@@ -24,7 +24,7 @@ public class HelloController {
 		logger.info("Hi Nagarpamma");
 		logger.debug("Hi Nagarpamma");
 
-		System.out.println("hi Nagarpamma");
+		System.out.println("God Nagarpamma");
 
 		return "message";
 	}
