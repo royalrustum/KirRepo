@@ -10,7 +10,9 @@
 		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
 		<property name="hibernate.hbm2ddl.auto">create</property>
 		<property name="hibernate.cache.use_second_level_cache">false</property>
-		<mapping class="com.kiran.software.entity.Customer" />
-		<mapping class="com.kiran.software.entity.Account" />
+	<!-- 	<mapping class="com.kiran.software.entity.onetoone.Account" />
+		<mapping class="com.kiran.software.entity.onetoone.Customer" /> -->
+		<mapping class="com.kiran.software.entity.manytomany.Student" />
+		<mapping class="com.kiran.software.entity.manytomany.Group" />
 	</session-factory>
 </hibernate-configuration>

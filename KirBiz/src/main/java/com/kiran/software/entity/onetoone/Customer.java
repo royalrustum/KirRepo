@@ -1,4 +1,4 @@
-package com.kiran.software.entity;
+package com.kiran.software.entity.onetoone;
 
 import java.math.BigDecimal;
 import java.util.Currency;
@@ -14,6 +14,7 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Type;
 
 import com.sun.istack.internal.NotNull;
+import com.kiran.software.entity.onetoone.Account;
 
 @Entity
 @Table(name="Customer")
