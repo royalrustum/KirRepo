@@ -8,11 +8,24 @@
 		<property name="hibernate.connection.username">Kiran</property>
 		<property name="hibernate.connection.password">Kiran</property>
 		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
-		<property name="hibernate.hbm2ddl.auto">create</property>
-		<property name="hibernate.cache.use_second_level_cache">false</property>
-	<!-- 	<mapping class="com.kiran.software.entity.onetoone.Account" />
-		<mapping class="com.kiran.software.entity.onetoone.Customer" /> -->
-		<mapping class="com.kiran.software.entity.manytomany.Student" />
-		<mapping class="com.kiran.software.entity.manytomany.Group" />
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+		
+		<property name="hibernate.cache.use_query_cache">true</property>
+		
+		<!-- <mapping class="com.kiran.software.entity.onetoone.Account" /> <mapping 
+			class="com.kiran.software.entity.onetoone.Customer" /> -->
+		<!-- <mapping class="com.kiran.software.entity.embed.Student" /> -->
+		<!-- <mapping class="com.kiran.software.entity.manytomany.Group" /> -->
+
+		<!-- <mapping class="com.kiran.software.entity.inherit.Vehicle" />
+		<mapping class="com.kiran.software.entity.inherit.TwoWheeler" />
+		<mapping class="com.kiran.software.entity.inherit.FourWheeler" /> -->
+		
+		<mapping class="com.kiran.software.entity.hql.Vehicle" />
+		<mapping class="com.kiran.software.entity.hql.TwoWheeler" />
+		<mapping class="com.kiran.software.entity.hql.FourWheeler" />
 	</session-factory>
 </hibernate-configuration>
